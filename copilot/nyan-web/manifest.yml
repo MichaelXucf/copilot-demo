@@ -47,7 +47,14 @@ network:
 #       rolling: 'recreate' # Stops existing tasks before new ones are started for faster deployments.
 
 environments:
+  test:
+    count: 1
+    cpu: 256
+    memory: 512
   production:
-    count: 2
-    cpu: 1024
-    memory: 2048
+    #count: 2
+    #cpu: 1024
+    #memory: 2048
+    count: 1
+    cpu: 256
+    memory: 512
